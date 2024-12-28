@@ -2,8 +2,8 @@ trigger:
  - main
 
 pool:
-   vmImage: 'ubuntu-latest' 
-
+    name: mytest
+    demands: Agent.Name -equals amol
 variables:
    imageName: 'pipelines-javascript-docker'
 
